@@ -8,9 +8,21 @@
     <body>
         <h1>Lista de carros</h1>
         <ul>
-            {% for car in car_list %}
-            <li>{{car.title}}</li>
-            {% endfor %}
+            <table>
+                <tr>
+                    <th> Title </th>
+                    <th> Year </th>
+                    <th> Color </th>
+                </tr>
+                {% for car in car_list %}
+                <tr>
+
+                    <td>{{car.title}}</td>
+                    <td>{{car.year}}</td>
+                    <td>{{car.color}}</td>
+                </tr>
+                {% endfor %}
+            
         </ul>
     </body>
 </html>
